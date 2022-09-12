@@ -13,8 +13,11 @@ int main(void)
 
 	while (a <= z)
 	{
-		printf("%d"'\n', a);
+		printf("%d", a);
 		a++;
 	}
+
+	printf('\n');
+
 	return (0);
 }
