@@ -1,22 +1,19 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
 
 /**
- * main - Entry point
- *
- * Return: Always 0 (Success)
+ *  main - Entry point
+ *  Return: Always 0 (Success)
  */
+
 int main(void)
 {
-		int n;
+	char alfa = 'a';
 
-			srand(time(0));
-				n = rand() - RAND_MAX / 2;
-					for (n = 'a'; n <= 'z'; n++
-					{
-						putchar (n);
-					}
-					putchar('\n');
-					return (0);
+	for (alfa = 'a'; alfa <= 'z'; alfa++)
+	{
+		putchar (alfa);
+		putchar ('\n');
+	}
+
+	return (0);
 }
