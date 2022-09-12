@@ -8,16 +8,10 @@
  */
 int main(void)
 {
-	int a = 0;
-	int z = 9;
+	int i;
 
-	while (a <= z)
-	{
-		printf("%d", a);
-		a++;
-	}
-
-	printf('\n');
-
+	for (i = 0; i < 10; i++)
+		printf("%d", i);
+	printf("\n");
 	return (0);
 }
