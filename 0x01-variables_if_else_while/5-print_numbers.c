@@ -4,16 +4,16 @@
 
 /**
  *  main - Entry point
- *  Result: Always 0 (Success)
+ *  Return: Always 0 (Success)
  */
 int main(void)
 {
-	char a = 48;
-	char z = 57;
+	int a = 0;
+	int z = 9;
 
 	while (a <= z)
 	{
-		printf("%c\n", a);
+		printf("%d", a);
 		a++;
 	}
 	return (0);
