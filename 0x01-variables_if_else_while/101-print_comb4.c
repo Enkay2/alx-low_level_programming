@@ -6,39 +6,33 @@
  */
 int main(void)
 {
-int c, i, j, k;
+	int i;
+	int j;
+	int k;
 
-for (c = 48; c <= 57; c++)
-{
-	for (i = 48; i <= 57; i++)
+
+	for (i = 0; i <= 9; i++)
 	{
-		for (k = 48; k <= 57; k++)
+		for (j = 0; i <= 9; j++)
 		{
-			for (j = 48; j <= 57; j++)
-			{
-				if (((k + J) > (c + i)
-&& k >= c || c < k)
-				{
-					putchar(c);
-					putchar(i);
-					putchar(' ');
-					putchar(k);
-					putchar(j);
 
-if (c + i + k + j == 227 && c == 57)
+			for (k = 0; k <= 9; k++)
+			{
+				if (k > j && j > i)
+				{
+					putchar(i + '0');
+					putchar(j + '0');
+					putchar(k + '0');
+					if (i != 7 || j != 8 || k != 9)
 					{
-						break
-					}
-else
-					{
-					putchar(',');
-					putchar(' ');
+						putchar(',');
+						putchar(' ');
+
 					}
 				}
 			}
 		}
 	}
-}
-putchar('\n');
-return (0);
+	putchar('\n');
+	return (0);
 }
