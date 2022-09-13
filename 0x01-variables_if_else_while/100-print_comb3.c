@@ -9,16 +9,16 @@
  */
 int main(void)
 {
-	int i;
-	int j;
+	int singles;
+	int doubles;
 
-	for (j = 0; j <= 9; j++)
+	for (doubles = 0; doubles <= 9; doubles++)
 	{
-		for (i = j + 1; i <= 9; i++)
+		for (singles = doubles + 1; singles <= 9; singles++)
 		{
-			putchar(j + '0');
-			putchar(i + '0');
-		if (j < 8)
+			putchar(doubles + '0');
+			putchar(singles + '0');
+		if (doubles < 8)
 		{
 			putchar(',');
 			putchar(' ');
