@@ -3,21 +3,22 @@
 
 /**
  * print_number - prints a number
- * @n: The number to print
+ * @n: The number to be printed
  */
 
 void print_number(int n)
 {
 	unsigned int num = n;
-
+	/*first check if its negative*/
 	if (n < 0)
 	{
+
 		putchar('-');
 		num = -num;
 	}
-	if (num > 9)
-	{
-		print_numbers(num / 10);
-	}
-	putchar(num % 10 + '0');
+	/*print the first few digits*/
+	if ((num / 10) > 0)
+		print_number(num / 10);
+	/*print the last digits*/
+	putchar((num % 10) + 48);
 }
